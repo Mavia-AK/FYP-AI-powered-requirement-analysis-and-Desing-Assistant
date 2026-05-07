@@ -1,0 +1,17 @@
+streamlit
+torch
+torchvision
+pandas
+plotly
+transformers
+python-docx
+PyPDF2
+pdfplumber
+reportlab
+pytest
+datasets
+accelerate
+scikit-learn
+openpyxl
+google-genai
+python-dotenv

@@ -1,0 +1,49 @@
+@startuml
+' PlantUML Use Case Diagram with professional styling and organized layout
+
+skinparam usecase {
+  BackgroundColor White
+  BorderColor #444444
+  FontName Arial
+  FontSize 11
+}
+
+skinparam backgroundColorWhite
+skinparam defaultTextAlignment center
+skinparam wrapWidth 40
+skinparam dpi 150
+
+actor :User as user
+actor :Administrator as admin
+
+rectangle "System" {
+  usecase (UC_Login) as login {
+    label Login
+  }
+
+  usecase (UC_ViewReports) as viewReports {
+    label View Reports
+  }
+
+  usecase (UC_GenerateReport) as generateReport {
+    label Generate Report
+  }
+
+  usecase (UC_ManageUsers) as manageUsers {
+    label Manage Users
+  }
+
+  ' Include relationship: Generate Report includes View Reports
+  generateReport ..> viewReports : <<include>>
+
+  ' Extend relationship: Manage Users extends Login
+  manageUsers <-- login : <<extend>>
+}
+
+' Actor to Use Case relationships
+user --> login : Access
+user --> viewReports : Access
+admin --> generateReport : Perform
+admin --> manageUsers : Manage
+
+@enduml

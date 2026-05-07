@@ -1,0 +1,12 @@
+node_modules/
+dataset/
+models/
+dist/
+build/
+*.zip
+*.mp4
+*.h5
+*.pt
+*.pkl
+.env
+.venv/

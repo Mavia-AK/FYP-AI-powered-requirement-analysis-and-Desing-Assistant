@@ -1,166 +1,155 @@
-🚀 AI-RADA: AI-Powered Requirement Analysis & Design Assistant
-📌 Overview
-AI-RADA (AI-Powered Requirement Analysis and Design Assistant) is an intelligent system designed to automate and enhance the requirement engineering process in software development. It leverages a hybrid AI pipeline (BERT + LLMs) to analyze software requirements, detect ambiguity, classify requirements, and generate architectural design insights such as UML diagrams.
-The system focuses on improving software project success rates by reducing requirement ambiguity and improving early-stage design decisions.
-________________________________________
-🎯 Problem Statement
-More than 70% of software projects fail due to poor requirement engineering. Manual analysis leads to:
-•	Ambiguous specifications 
-•	Misinterpretation of requirements 
-•	Expensive redesign in later stages 
-•	Poor communication between stakeholders 
-AI-RADA solves these issues by providing automated, intelligent, and real-time requirement analysis and design assistance.
-________________________________________
-💡 Key Features
-•	📄 Requirement classification (Functional / Non-Functional) 
-•	⚠️ Ambiguity detection using AI reasoning 
-•	🧠 Hybrid AI pipeline (BERT + LLM integration) 
-•	📊 Visual analytics dashboard (charts & insights) 
-•	🧩 Automatic UML / system design generation 
-•	📤 One-click export (PDF / DOCX reports) 
-•	⚡ Fast asynchronous processing with FastAPI backend 
-•	🎯 Clean, minimal, UX-focused interface 
-________________________________________
-🏗️ System Architecture
-AI-RADA follows a 3-tier architecture model:
-1. Presentation Layer
-•	React-based Single Page Application (SPA) 
-•	Interactive dashboards 
-•	Visualization components 
-2. Logic Layer
-•	FastAPI backend 
-•	Request validation & orchestration 
-•	API handling and processing flow 
-3. Intelligence Layer
-•	BERT model for fast classification 
-•	Large Language Models (LLMs) for deep semantic analysis 
-•	UML generation engine 
-________________________________________
-🔄 System Workflow
-User Input (Requirements Text)
-            |
-            v
-Frontend (React UI)
-            |
-            v
-FastAPI Backend
-            |
-            v
-Input Validation & Preprocessing
-            |
-            v
-BERT Model (Fast Requirement Classification)
-            |
-            v
-LLM Engine (Deep Semantic Analysis)
-            |
-            v
-Ambiguity Detection Engine
-            |
-            v
-Requirement Classification (FR / NFR)
-            |
-            v
-UML / Design Generator
-            |
-            v
-Database Storage (Logs & History)
-            |
-            v
-Visualization Layer (Charts & Dashboard)
-            |
-            v
-Export Module (PDF / DOCX Reports)
-            |
-            v
-Final Output to User
- ________________________________________
-🧠 AI Pipeline
-•	Step 1: Input validation and preprocessing 
-•	Step 2: BERT-based requirement classification 
-•	Step 3: LLM-based semantic reasoning 
-•	Step 4: Ambiguity detection 
-•	Step 5: System design generation (UML) 
-•	Step 6: Output visualization & reporting 
-________________________________________
-🎨 UI/UX Design Highlights
-•	Minimalist Indigo & Ocean design system 
-•	Real-time system feedback indicators 
-•	Consistent color-coded status system: 
-o	🟢 Clear Requirements 
-o	🔴 Ambiguous Requirements 
-•	Accessibility-focused typography (Inter / Roboto) 
-•	Jargon-free language for better usability 
-•	One-click export functionality 
-________________________________________
-🧩 Core Modules
-•	Analysis Center → Input & processing interface 
-•	Audit Engine → Detailed requirement analysis 
-•	Architectural Modeler → UML generation system 
-•	Visualization Dashboard → Charts and insights 
-•	Export System → PDF/DOCX reporting 
-________________________________________
-⚙️ Tech Stack
-Frontend
-•	React 
-•	Vite 
-•	Tailwind-inspired CSS 
-Backend
-•	FastAPI (Python) 
-•	Async REST APIs 
-AI / ML
-•	BERT (NLP classification) 
-•	LLM APIs (semantic reasoning) 
-Visualization
-•	Charts & Graph-based UI components 
-________________________________________
-🚀 Deployment Model
-AI-RADA uses a Hybrid Local + Cloud Architecture:
-•	Local FastAPI server handles core processing 
-•	Cloud-based LLM APIs handle deep reasoning tasks 
-•	Ensures performance + scalability balance 
-________________________________________
-📊 Use Cases
-•	Software Requirement Analysis 
-•	Project Planning & Documentation 
-•	Business Requirement Validation 
-•	System Design Assistance 
-•	Academic Software Engineering Projects 
-________________________________________
-📂 Project Structure
+# 🚀 AI-RADA: AI-Powered Requirement Analysis & Design Assistant
+
+## 📌 Overview
+AI-RADA (AI-Powered Requirement Analysis and Design Assistant) is an intelligent system designed to automate and enhance the requirement engineering process in software development.  
+
+It uses a hybrid AI pipeline (BERT + LLMs) to:
+- Analyze software requirements
+- Detect ambiguity
+- Classify requirements
+- Generate UML/design insights
+
+The goal is to reduce requirement failures in software projects.
+
+---
+
+## 🎯 Problem Statement
+More than 70% of software projects fail due to poor requirement engineering.
+
+### Main Issues:
+- Ambiguous specifications  
+- Misinterpretation of requirements  
+- Expensive redesign in later stages  
+- Poor stakeholder communication  
+
+### Solution:
+AI-RADA automates requirement analysis using AI to reduce these issues.
+
+---
+
+## 💡 Key Features
+- 📄 Requirement classification (Functional / Non-Functional)
+- ⚠️ Ambiguity detection using AI reasoning
+- 🧠 Hybrid AI pipeline (BERT + LLM integration)
+- 📊 Visual analytics dashboard
+- 🧩 Automatic UML / system design generation
+- 📤 Export reports (PDF / DOCX)
+- ⚡ FastAPI backend (async processing)
+- 🎯 Clean UI/UX dashboard
+
+---
+
+## 🏗️ System Architecture
+
+### 1. Presentation Layer
+- React-based SPA
+- Dashboards & visualization UI
+
+### 2. Logic Layer
+- FastAPI backend
+- API handling & orchestration
+
+### 3. Intelligence Layer
+- BERT model for classification
+- LLMs for semantic reasoning
+- UML generation engine
+
+---
+
+## 🔄 System Workflow
+
+User Input → Frontend → FastAPI → Preprocessing → BERT Model → LLM Engine → Ambiguity Detection → Classification → UML Generator → Database → Dashboard → Export Module
+
+---
+
+## 🧠 AI Pipeline
+1. Input preprocessing  
+2. BERT classification  
+3. LLM semantic analysis  
+4. Ambiguity detection  
+5. UML generation  
+6. Visualization & export  
+
+---
+
+## 🎨 UI/UX Highlights
+- Minimal Indigo/Ocean design system
+- Real-time feedback indicators
+- Color-coded status:
+  - 🟢 Clear requirements  
+  - 🔴 Ambiguous requirements  
+- Clean accessibility-focused UI
+
+---
+
+## 🧩 Core Modules
+- Analysis Center
+- Audit Engine
+- UML Generator
+- Visualization Dashboard
+- Export System
+
+---
+
+## ⚙️ Tech Stack
+
+### Frontend
+- React
+- Vite
+
+### Backend
+- FastAPI (Python)
+
+### AI / ML
+- BERT (NLP)
+- LLM APIs
+
+### Visualization
+- Charts & dashboards
+
+---
+
+## 📊 Use Cases
+- Software Requirement Analysis
+- System Design Assistance
+- Project Documentation
+- Academic FYP projects
+- Business requirement validation
+
+---
+
+## 📂 Project Structure
 AI-RADA/
-│
-├── frontend/        # React UI
-├── backend/         # FastAPI server
-├── models/          # BERT & ML models
-├── services/        # AI pipeline logic
-├── utils/           # Helper functions
-├── docs/            # Documentation
+├── frontend/
+├── backend/
+├── models/
+├── services/
+├── utils/
+├── docs/
 └── README.md
-________________________________________
-🔗 Live Demo / Repository
-•	GitHub: [Add your repository link here] 
-•	Live Demo: [Optional deployment link] 
-________________________________________
-📈 Future Improvements
-•	Multi-language requirement analysis 
-•	Real-time collaborative editing 
-•	Advanced AI-driven UML refinement 
-•	Integration with project management tools (Jira, Trello) 
-________________________________________
-📚 Learning Outcomes
-•	Applied UI/UX design principles in real system design 
-•	Understood hybrid AI architecture (BERT + LLMs) 
-•	Learned requirement engineering challenges 
-•	Designed enterprise-level system architecture 
-•	Improved conceptual system thinking over implementation focus 
-________________________________________
-👨‍💻 Contributors
-•	Developer 1 – UI/UX Design & Frontend 
-•	Developer 2 – Backend & API Development 
-•	Developer 3 – AI/ML Pipeline 
-•	Developer 4 – Documentation & Testing 
-________________________________________
-📌 Note
-This project is developed as an academic UI/UX and AI system design project. The focus is on conceptual design, architecture, and reasoning rather than full production deployment.
+
+---
+
+## 🚀 Future Improvements
+- Multi-language support
+- Real-time collaboration
+- Advanced UML generation
+- Jira/Trello integration
+- Cloud deployment
+
+---
+
+## 👨‍💻 Contributors
+- UI/UX Developer
+- Backend Developer
+- AI/ML Engineer
+- Documentation & Testing
+
+---
+
+## 📌 Note
+This project is an academic AI + software engineering system focused on:
+- architecture
+- requirement analysis
+- AI pipeline design
 
